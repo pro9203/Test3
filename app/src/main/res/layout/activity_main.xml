@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location State"
+        android:id="@+id/txstate"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOCATION"
+        android:id="@+id/btloc"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="79dp"
+        android:layout_below="@+id/txstate"
+        android:layout_alignStart="@+id/btmap" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="고도"
+        android:id="@+id/textView"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="위도"
+        android:layout_above="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="경도"
+        android:layout_above="@+id/txAlt"
+        android:layout_alignStart="@+id/btmap"
+        android:id="@+id/textView2" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="latitude"
+        android:id="@+id/txLat"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/btloc"
+        android:layout_toEndOf="@+id/btloc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="longitude"
+        android:id="@+id/txLon"
+        android:layout_below="@+id/txLat"
+        android:layout_toRightOf="@+id/btloc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="altitude"
+        android:id="@+id/txAlt"
+        android:layout_below="@+id/txLon"
+        android:layout_toRightOf="@+id/btloc" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GOOGLE MAPS"
+        android:id="@+id/btmap"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/txAlt"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
